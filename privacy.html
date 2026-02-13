@@ -1,39 +1,61 @@
-Caltrix is a Discord bot that integrates with Notion databases to publish schedules into Discord threads.
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Caltrix — Privacy Policy</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <a class="back" href="./index.html">← Back</a>
+      <h1>Privacy Policy</h1>
+      <p class="muted">Last updated: 2026-02-13</p>
 
-Data We Store
+      <p>
+        Caltrix is a Discord bot that can publish schedules from Notion databases into Discord threads.
+        This policy explains what data Caltrix stores and how it is used.
+      </p>
 
-Caltrix may store the following per Discord server:
+      <h2>1. Data We Store</h2>
+      <p>Depending on configuration, Caltrix may store the following per Discord server (guild):</p>
+      <ul>
+        <li>Discord server (guild) ID</li>
+        <li>Configured channel and thread IDs</li>
+        <li>Message IDs used to update an existing schedule post</li>
+        <li>Notion database IDs (configured by server admins)</li>
+        <li><em>Optional:</em> Notion integration tokens if the bot supports per-server Notion tokens in the future</li>
+      </ul>
 
-Discord Server ID
+      <h2>2. How We Use Data</h2>
+      <ul>
+        <li>To publish and update schedule messages in the configured threads</li>
+        <li>To maintain per-server configuration for correct operation</li>
+      </ul>
 
-Configured channel and thread IDs
+      <h2>3. Data Sharing</h2>
+      <p>Caltrix does not sell, rent, or share stored server configuration data with third parties.</p>
 
-Notion database IDs
+      <h2>4. Data Retention</h2>
+      <p>
+        Configuration data is retained while the bot is installed and/or until it is deleted by the developer.
+        Removing the bot from a server typically stops further processing for that server.
+      </p>
 
-Optional Notion integration tokens (if configured by server admin)
+      <h2>5. Deletion Requests</h2>
+      <p>
+        Server administrators can request deletion of stored configuration data by contacting:
+        <strong>YOUR_EMAIL_HERE</strong>
+      </p>
 
-Message IDs for updating schedule posts
+      <h2>6. Contact</h2>
+      <p>For privacy questions, contact: <strong>teirathel@gmail.com</strong></p>
 
-Data Usage
+      <p class="footer">© <span id="y"></span> Caltrix</p>
+    </main>
 
-Stored data is used solely to:
-
-Publish and update schedule messages
-
-Maintain per-server configuration
-
-Data Sharing
-
-Caltrix does not sell, share, or distribute user data to third parties.
-
-Data Removal
-
-Server administrators may remove all stored data by:
-
-Removing the bot from the server
-
-Requesting deletion via contact
-
-Contact
-
-For data-related questions: [teirathel@gmail.com]
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
